@@ -49,3 +49,5 @@ static void reverseInPlace(int[] arr) {
 	}
 }
 ~~~
+## Part 3  
+Something new that I found really interesting was that you could run your sites using the ieng6 server and have other people get onto it. I always knew that you could do it in theory (since I use the internet all the time) but actually learning how to do it seems pretty useful, especially since it was so easy to do. I feel like the things we've learned about servers and how to set them up has probably been the most applicable to the real world out of all of my CS education here so far.
