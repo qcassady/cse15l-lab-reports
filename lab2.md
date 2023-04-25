@@ -9,15 +9,15 @@ Next I replaced Hello with Howdy for my URI. This also calls the handleRequest m
 I chose the ReverseInPlace method from the ArrayExamples file. A failure-inducing input for the program is  
   
 @Test  
-  public void testReversedInPlaceMultiple() {  
-    int[] input2 = {1,2,3};  
-    ArrayExamples.reverseInPlace(input2);  
-    assertArrayEquals(new int[]{ 3,2,1 }, input2);  
-  }  
+public void testReversedInPlaceMultiple() {  
+	int[] input2 = {1,2,3};  
+	ArrayExamples.reverseInPlace(input2);  
+	assertArrayEquals(new int[]{ 3,2,1 }, input2);  
+}  
 An input that did not induce failure is  
 @Test  
-	public void testReverseInPlaceSingle() {  
-    int[] input1 = { 3 };  
-    ArrayExamples.reverseInPlace(input1);  
-    assertArrayEquals(new int[]{ 3 }, input1);  
-	}  
+public void testReverseInPlaceSingle() {  
+	int[] input1 = { 3 };  
+	ArrayExamples.reverseInPlace(input1);  
+	assertArrayEquals(new int[]{ 3 }, input1);  
+}  
