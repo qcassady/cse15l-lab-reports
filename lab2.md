@@ -40,12 +40,11 @@ static void reverseInPlace(int[] arr) {
 The code after the fixes is  
 ~~~
 static void reverseInPlace(int[] arr) {
-	int[] temp = new int[arr.length];
-	for(int i = 0; i<arr.length; i++){
-		temp[i] = arr[i];
-	}
-	for(int i = 0; i < arr.length; i += 1) {
-		arr[i] = temp[temp.length - i - 1];
+	int temp = 0;
+	for(int i = 0; i<(arr.length/2); i++){
+		temp = arr[i];
+		arr[i] = arr[arr.length - i - 1];
+		arr[arr.length - i - 1] = temp;
 	}
 }
 ~~~
