@@ -1,5 +1,5 @@
 # Lab 3  
-I chose to work with the `less` command.  
+I chose to work with the `find` command.  
 ## `-name` (source:ChatGPT)  
 First off, we have the `-name` option.  
 ~~~
@@ -73,3 +73,43 @@ $ find technical -size -2k -type f -exec wc -l {} \;
 17 technical/plos/pmed.0020226.txt
 ~~~
 This option allows us to run another command on the search results. This is extremely useful for things like grep, wc, and many more, as it allows us to directly act on the results of our searches instead of having to use another command to run them after we know which files we are working with. Overall it saves a lot of time and makes working with bash easier!
+
+## Usage of ChatGPT  
+I used the prompt ```Tell me some command-line options for the bash command find```.  
+ChatGPT returned back to me:  
+~~~
+The find command in Bash is a powerful tool for searching files and directories based on various criteria. Here are some commonly used command-line options for the find command:
+
+-name pattern: Searches for files or directories with the specified pattern in their name.
+Example: find /path/to/search -name "*.txt"
+
+-type type: Searches for files of the specified type. Common types are f for regular files and d for directories.
+Example: find /path/to/search -type f
+
+-size [+|-]size: Searches for files of a specific size. The + symbol denotes greater than, the - symbol denotes less than, and the size is specified in bytes.
+Example: find /path/to/search -size +1M
+
+-mtime [+|-]n: Searches for files modified more than (+) or less than (-) n days ago.
+Example: find /path/to/search -mtime +7
+
+-user username: Searches for files owned by a specific user.
+Example: find /path/to/search -user john
+
+-group groupname: Searches for files owned by a specific group.
+Example: find /path/to/search -group developers
+
+-empty: Searches for empty files or directories.
+Example: find /path/to/search -type d -empty
+
+-exec command {} +: Executes a command on each found file or directory. The {} placeholder represents the found item(s), and + allows multiple items to be passed to the command.
+Example: find /path/to/search -name "*.txt" -exec rm {} +
+
+-maxdepth n: Limits the search depth to n levels.
+Example: find /path/to/search -maxdepth 2 -name "*.txt"
+
+-mindepth n: Specifies the minimum depth of the search.
+Example: find /path/to/search -mindepth 1 -name "*.txt"
+
+These are just a few examples of the many options available for the find command. You can explore more options and combinations by referring to the find command's manual page using the man find command in your terminal.
+~~~  
+Using these basic descriptions and the example code, I selected the few that seemed the most useful and then applied it to our given repository and extrapolated the broader uses for these options (why we want to use them). ChatGPT helped me save a lot of time looking around for different options, and just collected a lot of them in one place for me to choose from. 
