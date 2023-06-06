@@ -2,7 +2,7 @@
 ## Part 4  
 ![image](https://github.com/qcassady/cse15l-lab-reports/assets/130010365/da260b16-110c-43e7-a592-5fa46c050cf1)  
 Keys pressed: ```<ctrl-v><enter>```  
-I had the login command copied to my clipboard, so I used ctrl-v to paste the command into the termianl and ran the command using enter before typing in my password and pressing enter again, which logged me into my ieng6 account.  
+I had the login command copied to my clipboard, so I used ctrl-v to paste the command into the terminal and ran the command using enter before typing in my password and pressing enter again, which logged me into my ieng6 account.  
 ## Part 5  
 ![image](https://github.com/qcassady/cse15l-lab-reports/assets/130010365/40aa176e-3955-4a11-95d5-1f4b3ba49b57)  
 Keys pressed: ```<ctrl-c><ctrl-v><enter>```  
